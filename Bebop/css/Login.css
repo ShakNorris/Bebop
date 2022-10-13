@@ -1,0 +1,97 @@
+body{
+	background-image:url("../img/LogicBg.jpg");
+	background-size:cover;
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+
+.Login-box{
+	width:320px;
+	height:400px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	color:white;
+}
+
+.Login-box h1{
+	text-align:center;
+	font-size:35px;
+	border-bottom: 6px solid white;
+	margin-bottom: 5px;
+	padding: 15px 0;
+}
+
+.Login-box form{
+	width:100%;
+	overflow:hidden;
+	color:white;
+	border-bottom: 6px solid white;
+}
+
+.textbox{
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid white;
+}
+
+.textbox i{
+	width:22px;
+	text-align:center;
+}
+
+.textbox input{
+	border:none;
+	background:none;
+	outline:none;
+	color:white;
+	font-size:20px;
+	width:90%;
+}
+
+.button{
+	width:100%;
+	background:none;
+	border: 2px solid white;
+	color:white;
+	font-weight:bold;
+	padding:5px;
+	font-size:20px;
+	cursor:pointer;
+	margin-bottom:20px;
+}
+
+.button:hover{
+	animation:btnanimate 0.3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes btnanimate{
+	from{background:auto;}
+	to{
+		background:white;
+		color:black;
+	}
+}
+
+.Login-box a{
+	display:inline-block;
+	text-decoration:none;
+	color:white;
+	font-size:20px;
+	margin-bottom:15px;
+}
+.Login-box a:hover{
+	text-decoration:underline;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.6;
+}
+
+input:focus::placeholder{
+	opacity:0.8;
+};
